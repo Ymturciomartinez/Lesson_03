@@ -1,0 +1,205 @@
+/* Color Palette
+000000 Black
+ffffff white
+f8c7cc light pink
+7d80da vista blue
+a6b1e1 blue purple
+*/
+
+/*MEDIA QUERIES
+----------------------*/
+
+@media (min-width: 480px) {
+    .col-narrow{
+    width: 40%;
+    float: left;
+}
+
+    .col-wide{
+    width: 60%;
+    float: left;
+    padding-left: 20px;
+}
+}
+
+@media (max-width:379px){
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+    }
+}
+/* Global styles
+--------------------*/
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background: white;
+    font-family: 'Gayathri', sans-serif;
+    margin: 0;
+}
+
+h1, h2{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+}
+
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+a{
+    color: midnightblue;
+}
+
+a:hover{
+    color: green;
+}
+
+.content-wrap{
+    max-width:950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
+    padding-top: 60px 50px;
+}
+
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.btn{
+    text-decoration: none;
+    background: lightpink;
+    color: midnightblue;
+    padding: 10px;
+    display: inline-block;
+}
+
+header p{
+    color: #a6b1e1;
+}
+
+/* Header and Footer
+--------------------*/
+header, footer{
+    background: #1c1d4d;
+}
+/* header */
+.profile-img{
+ width:300px;
+ border-radius: 50%;
+ float: left;
+ margin-right:30px;
+}
+
+.download{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header{
+    text-align: center;
+    position: relative;
+}
+
+header p{
+    color: #a6b1e1;
+}
+
+header p, footer p{
+    color: #a6b1e1;
+}
+
+header h1, header h2{
+    color: aliceblue;
+    margin:0;
+}
+/* footer */
+footer{
+    text-align: center;
+}
+
+.contact-info a{
+    background: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+footer h2{
+    color: aliceblue;
+}
+
+footer a{
+    color: #a6b1e1;
+}
+
+/* Navigation 
+-------------------------*/
+
+nav{
+    text-align: center;
+    background: white;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+nav a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Work Expierience
+---------------------*/
+.work{
+    background: #a6b1e1;
+}
+
+h3 ~ p{
+    margin:0;
+}
+
+.job-description{
+    margin-bottom:50px;
+}
+
+.job-description p:first-of-type{
+    margin-top:0;
+}
+
+/* Education
+---------------*/
+.education{
+
+    background: linear-gradient(rgba(248, 199, 204, 0.8), rgba(255, 255, 255, 0.5)),
+                    url(../images/campus.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+p + h3{
+    margin-top:30px;
+}
+
