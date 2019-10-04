@@ -159,7 +159,7 @@ footer a{
 /* Navigation 
 -------------------------*/
 
-nav{
+nav ul {
     text-align: center;
     background: white;
     position: fixed;
@@ -167,14 +167,41 @@ nav{
     width: 100%;
 }
 
-nav a{
+nav ul li {
+    float: left;
     display: inline-block;
-    padding: 15px 20px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 20px;
+    width: 20%;
 }
 
+nav ul li ul {
+    background: white;
+    visibility: hidden;
+    position: absolute;
+    display: none;
+    max-width: 200px;
+    align-items: center;
+}
+
+nav ul li ul a{
+    text-align: center;
+}
+
+nav ul li:hover > ul, nav li ul:hover {
+    visibility: visible;
+    display: block;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+nav ul li ul li{
+    clear: both;
+    width: 100;
+    text-align: center;
+}
 /* Work Expierience
 ---------------------*/
 .work{
@@ -205,4 +232,3 @@ h3 ~ p{
 p + h3{
     margin-top:30px;
 }
-
